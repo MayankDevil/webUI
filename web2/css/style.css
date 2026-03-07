@@ -1,0 +1,363 @@
+/*
+-   website-15 ""
+-   Copyright by ( https://github.com/MayankDevil/ )
+-   Designed | Developed by MayankDevil
+-   CSS : ./css/style.css
+*/
+
+* {
+    user-select: text;
+    margin: 0;
+    padding: 0;
+    color:var(--p5);
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    /* overflow: auto; */
+    /* box-sizing: border-box; */
+}
+
+:root {
+    --dark0:#f8f9fa;
+    --dark1:#e9ecef;
+    --dark2:#dee2e6;
+    --dark3:#ced4da;
+    --dark4:#adb5bd;
+    --dark5:#6c757d;
+    --dark6:#495057;
+    --dark7:#343a40;
+    --dark8:#212529;
+    --dark8:#000000;
+
+    --black:#10151b;
+
+    --p1:#d2f4ea;
+    --p2:#a6e9d5;
+    --p3:#79dfc1;
+    --p4:#4dd4ac;
+    --p5:#20c997;
+    --p6:#1aa179;
+    --p7:#13795b;
+    --p8:#0d503c;
+    --p9:#06281e;
+
+    --red3:oklch(80.8% 0.114 19.571);
+    --red5:oklch(63.7% 0.237 25.331);
+    --red6:oklch(57.7% 0.245 27.325);
+    --red7:oklch(50.5% 0.213 27.518);
+    --yellow6:oklch(68.1% 0.162 75.834);
+    --yellow7:oklch(47.6% 0.114 61.907);
+    --lime5:oklch(76.8% 0.233 130.85);
+    --lime7:oklch(53.2% 0.157 131.589);
+    --green3:oklch(87.1% 0.15 154.449);
+    --green5:oklch(72.3% 0.219 149.579);
+    --green7:oklch(52.7% 0.154 150.069);
+    --teal5:oklch(70.4% 0.14 182.503);
+    --teal7:oklch(51.1% 0.096 186.391);
+    --sky5:oklch(68.5% 0.169 237.323);
+    --sky7:oklch(50% 0.134 242.749);
+}
+
+body
+{
+    background:var(--black);
+    overflow:hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+section 
+{
+    width: 100%;
+    min-height: 100vh;
+}
+h1
+{
+    padding: 5rem;
+    font-size:3rem;
+    color:var(--p6);
+} h4
+{
+    margin: auto;
+    padding: 1rem;
+    width: 60vw;
+    word-spacing:2px;
+    line-height: 2rem;
+    font-weight: normal;
+    font-size:1.1rem;
+    color:var(--p7);
+}
+p 
+{
+    margin: 2rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    font-size: medium;
+    color: var(--dark6);
+}
+
+/*
+    main css --------------------------------
+*/
+.container
+{
+    max-width:1000px;
+    margin: 0 auto;
+}
+.btn
+{
+    display:inline-block;
+    padding: 0.5rem 1rem;
+    font-size:1rem;
+    color:var(--primary);
+    background:transparent;
+    border:2px solid var(--primary);
+}
+.btn:hover
+{
+    border-color:var(--primary);
+}
+
+
+:is(#header, #footer)
+{
+    min-height: 100vh;
+    z-index:1;
+    position:relative;
+    text-align: center;
+}
+
+
+#scroll_mouse
+{
+    margin: 5rem auto ; 
+}
+
+.scroll_down
+{
+    display:flex;
+    justify-content:center;
+    height:70px;
+    width:45px;
+    margin:auto;
+    border:var(--p1) solid 2px;
+    border-radius:30px;
+}
+.scroll_down:hover
+{
+    transition:all 0.5s linear;
+    transform: translateY(10px);
+    border-color:var(--p5);
+}
+.scroll_down span
+{
+    position:relative;
+    height:10px;
+    width:5px;
+    margin-top:10px;
+    background:var(--p3);
+    border-radius:30px;
+}
+.scroll_down span::before
+{
+    position:absolute;
+    left:-6px;
+    content:'';
+    height:15px;
+    width:15px;
+    margin-top:10px;
+    border:none;
+    border-right:2px solid var(--p3);
+    border-top:2px solid var(--p3);
+    transform: translateY(-10px) rotate(135deg);
+    opacity:0;
+    animation:scroll 1.8s infinite linear;
+}
+.scroll_down span::after
+{
+    position:absolute;
+    left:-6px;
+    content:'';
+    height:15px;
+    width:15px;
+    margin-top:10px;
+    border:none;
+    border-right:2px solid var(--p3);
+    border-top:2px solid var(--p3);
+    transform: translateY(-10px) rotate(135deg);
+    opacity:0;
+    animation:scroll 1.8s infinite linear;
+    animation-delay:0.8s;
+}
+
+@keyframes scroll {
+
+    0%{
+        margin-top:10px;
+        opacity:0;
+    }
+    50%{
+        margin-top:25px;
+        opacity:0.5;
+    }
+    100%{
+        margin-top:40px;
+        opacity:1;
+    }
+}
+/*
+    characteristics css -----------------------
+*/
+#character
+{
+    min-height: 100vh;
+    border: 1px solid var(--p9);
+}
+#character h2
+{
+    margin: 5rem auto;
+    text-align: center;
+    color:var(--p6);
+}
+#character .frame
+{
+    display: flex;
+    margin:10vh  auto;
+}
+#character .frame .card
+{
+    position: relative;
+    left:0px;
+    height: 500px;
+    flex-basis: 300px;
+    background: var(--black);
+    border-radius: 1rem;
+    transition: all 0.5s linear
+}
+#character .frame .card:not(:first-child)
+{
+    margin-left: -20px;
+}
+#character .frame .card:hover
+{
+    transform: translateY(-20px);
+}
+#character .frame .card:hover ~ .card
+{
+    left:20px;
+}
+
+.glow
+{
+    box-shadow: 0 0 5px var(--p5);
+}
+.glow:hover
+{
+    box-shadow: 0 0 50px 0 var(--p3);
+}
+
+#character .frame .card .image
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter:grayscale(100) blur(4px);
+}
+#character .frame .card .image:hover
+{
+    filter:blur(0px);
+}
+
+
+#anime
+{
+    width: 100%;
+}
+#anime li
+{
+    position:absolute;
+    padding: 1px;
+    font-weight: bolder;
+    font-size: 3rem;
+    color:var(--red5);
+    /* border:3px solid var(--red-b); */
+    list-style-type: none;
+}
+#anime li:nth-child(1)
+{
+    top:10%;
+    left:30%;
+    animation:anime 5s linear infinite;
+}
+#anime li:nth-child(2)
+{
+    top:20%;
+    left:70%;
+    animation:anime 8s linear infinite;
+}
+#anime li:nth-child(3)
+{
+    top:30%;
+    left:5%;
+    animation:anime 6s linear infinite;
+}
+#anime li:nth-child(4)
+{
+    top:40%;
+    left:80%;
+    animation:anime 7s linear infinite;
+}
+#anime li:nth-child(5)
+{
+    top:50%;
+    left:20%;
+    animation:anime 9s linear infinite;
+}
+#anime li:nth-child(6)
+{
+    top:60%;
+    left:60%;
+    animation:anime 4s linear infinite;
+}
+#anime li:nth-child(7)
+{
+    top:70%;
+    left:30%;
+    animation:anime 5s linear infinite;
+}
+#anime li:nth-child(8)
+{
+    top:80%;
+    left:80%;
+    animation:anime 6s linear infinite;
+}
+#anime li:nth-child(9)
+{
+    top:70%;
+    left:10%;
+    animation:anime 4s linear infinite;
+}
+#anime li:nth-child(10)
+{
+    top:30%;
+    left:90%;
+    animation:anime 5s linear infinite;
+}
+#anime li:nth-child(11)
+{
+    top:60%;
+    left:90%;
+    animation:anime 5s linear infinite;
+}
+/* CSS : website 17/ style/ animation frame */
+@keyframes anime{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity:0.5;
+    }
+    100%{
+        transform: scale(1.2) translateY(-90px) rotate(360deg);
+        opacity:1;
+    }
+}
