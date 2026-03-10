@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--
+- Clone1 : "wikipedia" 
+- Desgined | Developed by Mayank
+- CopyRight by Wikipedia
+- HTML : ./index.html
+-->
+<html lang="en">
+
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title> MayankDevil </title>
+	
+		<!--
+			===============
+			| STYLE SHEET |
+			===============
+		-->	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../assets/bootstrap-icons.min.css">
+		<link rel="stylesheet" href="../assets/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+
+		<style>
+		
+			#sidebar a img:hover {
+				border:5px solid var(--bs-light);
+			}
+			
+			@media screen and (min-width:1024px){
+			
+				.container{
+						width:1024px !important;
+				}
+			
+			}
+			@media screen and (max-width:576px){
+	
+				#srch_box{
+					display:none;
+				}
+			}
+			
+		
+		</style>
+	
+	</head>
+
+	<body class="">
+
+		<script>
+
+			// window.open('rubyrose.html','_self')
+
+		</script>
+	
+		<!--
+			================================================================================
+			[ MOTHER container ] main frame that container body content
+			================================================================================
+		-->
+		<div class="container-fluid" id="mother_container">
+			
+			<!--
+			    -----------------------------------------------------------
+			    [ header section ]
+			    -----------------------------------------------------------
+			-->
+			<div class="container">
+				<div class="row py-5">
+
+					<!-- heading -->
+					<div class="col-12">
+
+						<div class="w-50 mx-auto text-center p-3 my-3">
+
+							<img src="data/logo/title1.svg" alt="wikipedia" class="img-fluid w-50 mx-auto">
+							<img src="data/logo/title2.svg" alt="subtitle" class="img-fluid w-50 mx-auto">
+
+						</div>
+
+					</div>
+					<!-- body -->
+					<div class="row">
+						<!-- first -->
+						<div class="col">
+						    <div class="row">
+						    
+						        <div class="col-6"></div> 
+						        <div class="col-6 text-end py-2">
+						        
+						            <div class="h4 text-primary"> English </div>
+						            <small class="text-secondary"> 6,780,000 + articles </small>
+						        </div>
+						        
+						        <div class="col-6"></div>
+						        <div class="col-6 text-center py-2">
+						        
+						            <div class="h4 text-primary"> Русский </div>
+						            <small class="text-secondary"> 5,080,000 + статей </small>
+						        </div>
+						        
+						        <div class="col-5"></div>
+						        <div class="col-6 text-center py-2">
+						        
+						            <div class="h4 text-primary"> Español </div>
+						            <small class="text-secondary"> 6,780,000 + articles </small>
+						        </div>
+						        
+						        <div class="col-6"></div>  
+						        <div class="col-6 text-center py-2">
+						        
+						            <div class="h4 text-primary"> Italiano </div>
+						            <small class="text-secondary"> 6,780,000 + voci </small>
+						        </div>
+						        
+						        <div class="col-6"></div>  
+						        <div class="col-6 text-end py-2">
+						        
+						            <div class="h4 text-primary"> فارسی </div>
+						            <small class="text-secondary"> + مقاله6,780,000 </small>
+						        </div>
+						          
+						    </div>
+						</div>
+						<!-- center -->
+						<div class="col text-center py-5">
+							<img src="data/logo/logo.png" alt="logo" class="img-fluid">
+						</div>
+						<!-- last -->
+						<div class="col">
+						    <div class="row">
+						        
+					            <div class="col-6 text-start py-2">
+					            
+					                <div class="h4 text-primary"> 日本語 </div>
+					                <small class="text-secondary"> 6,780,000 + 記事 </small>
+					            </div>
+						        <div class="col-5"></div> 
+					            
+					            <div class="col-6 text-center py-2">
+					            
+					                <div class="h4 text-primary"> Deutsch </div>
+					                <small class="text-secondary"> 6,780,000 + Artikel </small>
+					            </div>
+					            <div class="col-6"></div>
+					            
+					            <div class="col-6 text-end py-2">
+					            
+					                <div class="h4 text-primary"> Français </div>
+					                <small class="text-secondary"> 6,780,000 + articles </small>
+					            </div>
+					            <div class="col-4"></div>
+					            
+					            <div class="col-6 text-center py-2">
+					            
+					                <div class="h4 text-primary"> 中文 </div>
+					                <small class="text-secondary"> 97,000 + 条目/條目 </small>
+					            </div>
+					            <div class="col-6"></div>  
+					            
+					            <div class="col-6 text-start py-2">
+					            
+					                <div class="h4 text-primary"> Polski </div>
+					                <small class="text-secondary"> 6,780,000 + haseł </small>
+					            </div>
+					            <div class="col-5"></div>  
+						    
+						    </div>
+						</div>
+					
+					</div>
+
+				</div>
+			</div>
+
+
+				<form action="#">
+
+					<div class="w-50 mx-auto">
+
+						<div class="btn-group w-100">
+							<input type="search" class="form-control" placeholder="Search in Free Encyclopedia ..." list="site">
+							
+							<a href="#" class="btn btn-dark" id="explore-btn"> <div class="bi bi"></div> explore </a>
+						</div>
+
+						<datalist id="site">
+							<option value="rubyrose.html"></option>	    
+							<option value="sunnyLeone.html">  </option>
+							<option value="angelawhite.html"></option>
+							<option value="https://github.com/MayankDevil/"></option>
+						</datalist>
+
+					</div>
+
+				</form>
+				
+				<!--
+					------------------------------------------------------------------
+					[ footer section ]
+					------------------------------------------------------------------
+				-->
+				<div class="bg-light" id="footer">
+				    <div class="container">
+					    <div class="row my-3 border-top ">
+							<!-- waste -->
+						    <div class="col">
+
+							    <div>
+									<a href="sunnyleone.html" > Sunny Leone </a>
+							    </div>
+							    <div>
+								    <a href="rubyrose.html" > Ruby Rose </a>
+							    </div>
+							    <div>
+								    <a href="angelawhite.html" > Angela Gabrialle white </a>
+							    </div>
+
+						    </div>
+							<!-- download -->
+							<div class="col">
+
+								<div class="row p-3">
+									<div class="col-2">
+										<img src="data/logo/logo2.png" alt="">
+									</div>
+									<div class="col-8">
+										<div class="">Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects. </div>
+										<a href="https://github.com/MayankDevil/" class="d-block text-decoration-none"> You can support our work with a donation. </a>
+									</div>
+								</div>
+
+								<div class="row bg-white border rounded">
+									<div class="col-2">
+										<img src="data/logo/logo3.png" alt="">
+									</div>
+									<div class="col">
+
+										<a href="https://github.com/MayankDevil/" class="d-block py-2 text-decoration-none"> Download Wikipedia for Android or iOS  </a>
+										
+										<div class="">Save your favorite articles to read offline, sync your reading lists across devices and customize your reading experience with the official Wikipedia app.</div>
+
+										<div class="d-flex py-3">
+
+											<button class="btn btn-dark d-flex m-1"> <div class="bi bi-google-play px-2"></div> Google Play </button>
+
+											<button class="btn btn-dark d-flex m-1"> <div class="bi bi-apple px-2"></div> Apple Store </button>
+
+										</div>
+									
+									</div>
+								</div>
+
+							</div>
+
+					    </div>
+
+						<div class="d-flex py-3">
+
+							<div class=""> This page is available under the </div>
+
+							<a href="https://github.com/MayankDevil/" class="d-block text-decoration-none px-2"> Creative by Mayank </a>
+
+						</div>
+					</div>
+				</div>
+
+				
+				
+		</div>
+		<!--
+			================
+			| SCRIPT SHEET |
+			================
+		-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="../assets/bootstrap.bundle.min.js"></script>
+		<script src="script.js"></script>
+		
+	</body>
+
+</html>
+<!-- THE END -->

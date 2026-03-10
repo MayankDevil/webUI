@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<!--
+- Clone1 wikipedia 
+- Desgined | Developed by Mayank
+- CopyRight Wikipedia
+- ./index.html
+-->
+<html lang="en">
+
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title> Clone Ruby Rose </title>
+	
+		<!--
+			===============
+			| STYLE SHEET |
+			===============
+		-->	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../assets/bootstrap-icons.min.css">
+		<link rel="stylesheet" href="../assets/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		
+		<style>
+		
+			#sidebar a img:hover {
+				border:5px solid var(--bs-light);
+			}
+			
+			@media screen and (min-width:1024px){
+			
+				.container{
+						width:1024px !important;
+				}
+			
+			}
+			@media screen and (max-width:576px){
+	
+				#srch_box{
+					display:none;
+				}
+			}
+			
+		
+		</style>
+	
+	</head>
+
+	<body class="">
+	
+		<!--
+			================================================================================
+			[ MOTHER container ] main frame that container body content
+			================================================================================
+		-->
+		<div class="container-fluid" id="mother_container">
+			<!--
+				--------------------------------------------------------------------------------
+				[ NAVBAR section ]
+				--------------------------------------------------------------------------------
+			-->					
+			<div class="container-fluid" id="nav-bar">
+				<div class="row d-sm-flex align-items-center justify-content-between m-3">
+					<!-- LOGO -->
+					<div class="col-lg-3 col-md-4 col-sm-12" id="logo">
+						<div class="row">
+							<div class="col-sm-3 col-4">
+								<img src="data/logo/logo.png" class="imag-fluid w-100">
+							</div>
+							
+							<div class="col-6">
+								<div class="row">
+									<div class="col-10 p-md-0 p-3">
+										<img src="data/logo/title1.svg" class="imag-fluid w-100">
+									</div>
+									<div class="col-10">
+										<img src="data/logo/title2.svg" class="imag-fluid w-100">
+									</div>
+								</div>
+							
+							</div>
+							
+						</div>
+					</div>
+					<!-- SearchBar -->
+					<div class="col-lg-6 col-md-8 col-sm-12 my-md-0 my-sm-3 d-sm-flex d-none align-items-center" id="srch_box">
+					
+						<input type="serach" placeholder="Search Wikipedia" class="form-control">
+					
+					</div>
+					<!-- Register -->
+					<div class="col-lg-3 col-md-12 my-lg-0 my-md-3 d-sm-flex justify-content-end d-none" id="acut_grp_btn">
+						<a href="#" class="btn btn-outline-secondary"> Create Account </a>
+						<a href="#" class="btn btn-outline-primary"> Login </a>
+					</div>
+					
+				</div>
+			</div>
+			<!--
+				====================================================================================================
+				[ Content AREA ] container > row >  col * 2
+				====================================================================================================
+			-->
+			<div class="container" id="">
+			
+				<div class="row" id="">
+					<!--
+						[ sidebar menu ]================================================
+					-->
+					<div class="col-3 d-lg-block d-none" id="sidebar">
+					
+						<a href="#moreabout" class="btn btn-outline-dark my-1"> More About </a>
+					
+						<a href="#earlylife" class="btn btn-outline-dark my-1"> Early Life </a>
+						
+						<a href="#career" class="btn btn-outline-dark my-1"> Career </a>
+						
+						<a href="#personal" class="btn btn-outline-dark my-1"> Personal Life </a>
+						
+						<a href="#inmedia" class="btn btn-outline-dark my-1"> In The Media </a>
+						
+						<a href="#filmograpy" class="btn btn-outline-dark my-1"> Filmograpy </a>
+						
+						<a href="#award" class="btn btn-outline-dark my-1"> Awards AND Nominations </a>
+						
+						<a href="#" class="btn btn-outline-dark my-1"> Notes </a>
+						
+						<a href="#" class="btn btn-outline-dark my-1"> References </a>
+						
+						<a href="#" class="btn btn-outline-dark my-1"> External Links </a>
+						
+						<div class="w-100 my-3">
+							<a href="#"><img src="data/logo/logo.png" class="img-fluid w-100 border p-2"></a>
+						</div>
+						
+						<div class="lead bg-primary text-white border rounded p-3 my-3"> THE POWER OF INFORMATION </div>
+					
+						<!-- POSTER -->
+						
+						<a href="data/rubyRose_data/p4.jpg" class="d-block py-3">
+							<img src="data/rubyRose_data/p4.jpg" class="imag-fluid w-100">
+						</a>
+						
+						<a href="data/rubyRose_data/p1.jpg" class="d-block py-3">
+							<img src="data/rubyRose_data/p1.jpg" class="imag-fluid w-100">
+						</a>
+						
+						<a href="data/rubyRose_data/p2.jpg" class="d-block py-3">
+							<img src="data/rubyRose_data/p2.jpg" class="imag-fluid w-100">
+						</a>
+						
+						<a href="data/rubyRose_data/p5.jpg" class="d-block py-3">
+							<img src="data/rubyRose_data/p5.jpg" class="imag-fluid w-100">
+						</a>
+						
+						<a href="data/rubyRose_data/p3.jpg" class="d-block py-3">
+							<img src="data/rubyRose_data/p3.jpg" class="imag-fluid w-100">
+						</a>
+						
+						<a href="data/rubyRose_data/p6.jpg" class="d-block py-3">
+							<img src="data/rubyRose_data/p6.jpg" class="imag-fluid w-100">
+						</a>
+						
+						<a href="data/rubyRose_data/p7.jpg" class="d-block py-3">
+							<img src="data/rubyRose_data/p7.jpg" class="imag-fluid w-100">
+						</a>
+						
+						<a href="data/rubyRose_data/p8.jpg" class="d-block py-3">
+							<img src="data/rubyRose_data/p8.jpg" class="imag-fluid w-100">
+						</a>
+						
+						<a href="#" class="btn btn-outline-success my-2"> More Related &#10097; </a>
+						
+					</div>
+					<!--
+						[ DATA CONTENT ]================================================
+					-->
+					<div class="col py-3">
+						<!--
+							-----------------------------------------------
+							[ TITLE section ]
+							-----------------------------------------------
+						-->
+						<div class="" id="header">
+							<!-- WEBSITE heading -->
+							<div class="h1"> Ruby Rose </div>
+						
+							<div class="row d-sm-flex justify-content-between align-items-center border-bottom border-top my-3">
+								<div class="col-md-10 col-12 d-sm-block d-none">
+									<a href="#" class="text-decoration-none p-2">Article</a>
+									<a href="#" class="text-decoration-none p-2">Talk</a>
+									<a href="#" class="text-decoration-none p-2">Read</a>
+									<a href="#" class="text-decoration-none p-2">View Source</a>
+									<a href="#" class="text-decoration-none p-2">View History</a>
+									<a href="#" class="text-decoration-none p-2">Tool</a>
+								</div>
+								<div class="col-md-2 col-12 my-md-0 my-3">
+									<select class="px-2 border-none w-100 form-control text-right text-danger">
+										<option>Language</option>
+										<option>العربية</option>
+										<option>भोजपुरी</option>
+										<option>Español</option>
+										<option>हिन्दी</option>
+										<option>தமிழ்</option>
+										<option>中文</option>
+										<option>German</option>
+										<option>Русский</option>
+										<option>xzone</option>
+										
+									</select>
+								</div>
+							</div>
+						
+						</div>
+						<!--
+							-----------------------------------------------
+							[ HEADER section ]
+							-----------------------------------------------
+						-->
+						<div class="py-3 italic"> &nbsp;&nbsp;&nbsp; " The Hot Sexy Ruby Rose the mutli-Telented Celebrity. Driector, Actress, Model, Fashion Designer, Television Presenter, Dj. She a lesbian at age 12. " </div>
+				
+						<div class="row py-3 alert alert-success">
+							
+							<div class="col">
+								<ul>
+									<li class="my-3"> <b> Stage Name </b> Ruby Rose </li>
+									<li class="my-3"> <b> Real Name </b> Ruby Rose Langenheim </li>
+									<li class="my-3"> <b> Born </b> 20 March 1986 Melbourne, Victoria, Australia </li>
+									<li class="my-3"> <b> Age </b> 37 year </li>
+									<li class="my-3"> <b> Citizenship </b> Australia </li>
+									<li class="my-3"> <b> Occupation </b> Actress | Model | Director | Television Presenter | Dj | Fashion Designer </li>
+									<li class="my-3"> <b> Protfolio </b> <a href="#"> https://rubyrose.com </a> </li>
+								</ul>
+						
+							</div>
+							
+							<div class="col-md-5 col-12 order-md-last order-first p-md-0 p-3">
+								<img src="data/rubyRose_data/3.jpg" class="imag-fluid rounded w-100 h-100">
+							</div>	
+						
+						</div>
+						<!--
+							-----------------------------------------------
+							[ MORE section ]
+							-----------------------------------------------
+						-->
+						<div class="row" id="moreabout">
+						
+							<div class="col">
+								
+								<div class="h3 py-3  border-bottom"> More About </div>
+						
+								<p> <b>Ruby Rose Langenheim</b> (born 20 March 1986) is an <a href="#">Australian</a> model, actress, disc jockey and television presenter. Rose was a presenter on <a href="#">MTV Australia</a> (2007–2011), followed by several high-profile modelling gigs, including <a href="#">Maybelline</a> New York in Australia. In addition, she has co-hosted various television shows, including <a href="#">Australia's Next Top Model</a> (2009) and <a href="sunnyLeone.html">The Project</a> on <a href="#">Network Ten</a> (2009–2011). </p>
+							
+								<p> Rose pursued a career in acting from 2008 onwards. She had a small role in the drama film Around the Block (2013) and came to wider attention for her role in season three of the Netflix series Orange Is the New Black (2015–2016). She also had roles in the action films Resident Evil: The Final Chapter (2016), XXX: Return of Xander Cage (2017) and John Wick: Chapter 2 (2017) and co-starred in the musical comedy Pitch Perfect 3 (2017) and the monster film The Meg (2018). She also starred in the lead role of Kate Kane / Batwoman in the first season of the CW television series Batwoman (2019–2020). </p>							
+							
+							</div>
+							
+						</div>
+						<!--
+							-----------------------------------------------
+							[ EARLY LIFE section ]
+							-----------------------------------------------
+						-->
+						<div class="row" id="moreabout">
+						
+							<div class="col">
+								
+								<div class="h3 py-3  border-bottom"> Early Life </div>
+						
+								<p> Rose was born in Melbourne, the daughter of Katia Langenheim, a then 20-year-old single mother.[4] As a young child, Rose traveled frequently, living in rural Victoria, Tasmania, and Surfers Paradise before finally settling in Melbourne.[5] As a teenager, she attended University High School and Footscray City College.[6] Rose is the goddaughter of Indigenous Australian boxer Lionel Rose and the great-granddaughter (respectively) of German movie actress Ellen Bang and Alec Campbell, the last surviving Australian soldier who fought in the Battle of Gallipoli.</p>
+						
+							</div>
+							
+							<div class="col-md-5 col-12 p-md-0 p-3">
+								<img src="data/rubyRose_data/5.jpg" class="imag-fluid w-100 rounded">
+							</div>
+							
+						</div>
+						<!--
+							-----------------------------------------------
+							[ CAREER section ]
+							-----------------------------------------------
+						-->
+						<div class="row" id="career">
+						
+							<div class="col-12">
+								
+								<div class="h3 py-3  border-bottom"> Career </div>
+								
+								<div class="h5 py-3"> MODELLING AND FASHION </div>
+								
+								<p> Rose first joined the Girlfriend model search in 2002, for which she came in second to Catherine McNeil.[7] In 2010, she collaborated with the Australian fashion label Milk and Honey to design a capsule fashion line. The collection, named Milk and Honey Designed by Ruby Rose,[8] includes washed jeans, leather jackets and T-shirts. The clothing line was available in selected retailers in Australia. Rose also released a collaboration collection with street footwear brand Gallaz. </p>
+								
+								<p> In 2014, Rose began collaborating with Phoebe Dahl for their clothing range Faircloth Lane. She has featured predominantly within mainstream fashion titles, including Vogue Australia, InStyle Magazine, Marie Claire Magazine, Cleo, Cosmopolitan, Maxim, Nylon and New York's Inked Magazine. She's been the Australian ambassador for JVC, Australian clothes company JAG and luxury Danish label Georg Jensen. Rose is the face of Maybelline New York in Australia. </p>
+						
+								<p> Since March 2016, Rose has been the face of Urban Decay Cosmetics. </p>
+								
+								<p> In March 2017, Rose starred in Nike's latest campaign "Kiss My Airs" celebrating its Air Max Day.[10] In May, Rose was the face of Swarovski 'Urban Fantasy' FW17 Collection launch. </p>
+						
+								<div class="h5 py-3"> VJ CAREER AND TELEVISION PERSONALITY </div>
+								
+								<p> In order to land her job as an MTV VJ in Australia, Rose competed against 2000 other hopefuls in a three-week national search, as former VJ Lyndsey Rodrigues moved to the United States to co-host TRL.[7] As part of the competition, she downed 100 shots of beer in 100 minutes against Jackass's Bam Margera, and kissed strangers on a busy Sydney street.[7] She stated, "Being a model there is always something they want to change. Whether they want someone a little bit skinnier, a little bit taller, a little bit prettier, but MTV wants you to be yourself ... not censoring anything and not conforming to anything." </p>
+								
+								<p> In 2009, Rose won the ASTRA Award for Favourite Female Personality.[12] She also travelled to Kenya to "highlight ... [the] amazing work" done by Global Vision International.[5] She appeared in the episode "Media Virgins", of Australia's Next Top Model, acting as a guest judge,[13] and also worked as a correspondent for the finale of Australia's Next Top Model. </p>
+								
+								<p> In July 2009, Rose along with Dave Hughes, Charlie Pickering, Carrie Bickmore and James Mathison hosted The 7pm Project, an Australian television news talk show produced by Roving Enterprises which airs weeknights on Network Ten.[15] She left the program to pursue her own hosting projects. In October 2009, it was announced that FOX8 had picked up the rights to UK format Ultimate School Musical,[16] which features ordinary teenagers from a school attempting to put on a music production to a professional standard in just six weeks. The Australian version was produced by FremantleMedia Australia with Rose as host,[17] and aired in 2010. Rose also hosted the Foxtel Mardi Gras for 3 consecutive years before becoming an official correspondent for Foxtel for the 2010 Winter Olympics. In October 2015, Rose hosted the 2015 MTV Europe Music Awards alongside Ed Sheeran in Milan. </p>
+								
+								<div class="h5 py-3"> ACTINH CAREER </div>
+								
+								<p> Rose was selected in 2008 to act in the Australian comedy film Suite for Fleur.[18][19] In 2009, she appeared on the first episode of Talkin' 'Bout Your Generation, representing Generation M alongside comedian Josh Thomas.[20] She also appeared alongside Christina Ricci and Jack Thompson in the 2013 film Around the Block. </p>
+								
+								
+								<p> Rose credits her 2014 short film Break Free, which she produced herself, for the success of her acting career. In an interview with Variety, she described how she was not able to get a manager, agent, or audition; so she decided to create short films "as a way of being able to give myself something to do and to study my craft." The film went viral, getting millions of views in a short period of time. </p>
+								
+								<p> <b>2015–2018: Orange is the New Black and film stardom[edit]</b> </p>
+								
+								<p> In 2015, Rose joined the Orange Is the New Black cast in season 3. Rose played inmate Stella Carlin, "whose sarcastic sense of humour and captivating looks quickly draw the attention of some of Litchfield's inmates."[22][23] Rose's performance was generally well received by the public.[24] She was also cast in a guest role, as the service robot Wendy, in the science fiction series Dark Matter. </p>
+								
+								<p> Rose and Tom Felton lent their voices to the animated title Sheep & Wolves, with Rose as fiancé Bianca.[citation needed] In 2016 and 2017, Rose appeared in three action film sequels, XXX: Return of Xander Cage, alongside Vin Diesel, Resident Evil: The Final Chapter as Abigail, and John Wick: Chapter 2, alongside Keanu Reeves; she also played a musical rival in the comedy Pitch Perfect 3, which was released in December 2017.[26] Rose co-starred in the Warner Bros. film The Meg, a shark epic based on the novel of the same name, alongside Jason Statham; the film was released on 10 August 2018. </p>
+								
+								<p> <b>2019–2020: Batwoman and controversies[edit]</b> </p>
+								
+								<p> On 7 August 2018, it was reported that Rose had been cast as Batwoman in an Arrowverse crossover.[28] Her role as Kate Kane has been noted as the first openly lesbian lead superhero in television.[29] Batwoman aired on The CW on 6 October 2019.[30] Rose's casting as Batwoman was met by backlash and criticism on social media.[31][32] DC Comics, which owns the rights to the longtime comic book superheroine Batwoman, reintroduced the character in 2006 as a lesbian of Jewish descent. Some online commentators criticized Rose for not being Jewish, while the main focus of the scrutiny was the assertion that the fact she identifies as genderfluid made her "not gay enough" for the role.[31] Rose quit Twitter and deactivated public commenting on her Instagram account following the backlash.[31] Prior to leaving Twitter, she released a tweet responding to the negative reaction, stating, "Where on earth did 'Ruby is not a lesbian therefore she can't be batwoman' come from — has to be the funniest most ridiculous thing I've ever read."[33] Rose called for unity between women and minorities, imploring women and the LGBT community to be kinder and more supportive of each other. </p>
+								
+								<p> In Entertainment Weekly's 2019 LGBTQ special issue, Rose additionally discussed the backlash to her casting as the title character of the television series Batwoman.[34] She said the opportunity to audition for Orange is the New Black came about because the show wanted to have a gender-neutral character, but that she has also received criticism because of her genderfluid identity, adding, "when I got cast as a lesbian in Batwoman, I didn't know that being a gender-fluid woman meant that I couldn't be a lesbian because I'm not a woman - not considered lesbian enough." She said that while her initial response was dismissive, she later considered if there was a way to remedy the situation so that others would not be offended by her identity, and pondered making up a term that does not offend people and would indicate that she is "fluid in (her) gender, but also a lesbian." </p>
+								
+								<p> On 19 May 2020, Rose departed Batwoman after the first season, and initially gave no definitive reason behind her departure.[35] Her character was subsequently written out of the series and replaced with a new one named Ryan Wilder, portrayed by Javicia Leslie.[36] Rose later said she suffered an injury during the production of the first season.[37] In August 2020, she called being the lead of a series "taxing" and stated her back surgery following the injury was a contributing factor in deciding to leave.[38] In a March 2021 interview with ComicBookMovie.com, when asked if she would reprise Kate at some point, Rose said, "I would totally do it. I don't think it would serve the story because I think building the new Batwoman is more important than going back too far into Kate Kane, but of course I would." She added, "I've watched a couple of episodes, and I think how they're handling it is beautiful. I think it's [Ryan Wilder's] time to shine."[39] Later that same month, English actress Wallis Day was cast as Kate Kane, as the show's story involved Kate receiving surgical alteration to her face after an airplane crash left her injured.[40] Rose, commenting on an Instagram tribute to her time in the role, said she was "stoked" about Day's casting. </p>
+								
+								<p> In July 2021, Rose said she was allergic to latex, which was another reason for leaving Batwoman as her character's mask was made of latex.[42] A few months later, in October, she began to publish allegations of an abusive and dangerous working environment on the Batwoman set, naming Warner Bros. executive Peter Roth, costars Dougray Scott and Camrus Johnson, and others on the production as responsible parties.[43][44][45] However, in response, Johnson confirmed that Rose had in fact been fired from Batwoman (not quitting as she previously claimed),[46] with Warner Bros. then releasing a statement responding to the accusations, saying that "Warner Bros Television had decided not to exercise its option to engage Ruby for season two" after "multiple complaints about her workplace behaviour". </p>
+								
+								<p> <b>2020–present[edit]</b> </p>
+								
+								<p> On 22 May 2020, Rose portrayed Viola in a livestreamed table-read of Twelfth Night as part of a benefit to raise money for COVID-19 pandemic relief.[48][b] She will also star in the action comedy Three Sisters. </p>
+								
+								<p> In November 2021, Rose took a sabbatical from Hollywood to return to her native Australia. </p>
+								
+								<div class="h5 py-3"> MUSIC AND CHARITY WORK </div>
+								
+								<p> In February 2012, Rose released her first single "Guilty Pleasure" with Gary Go. In November 2016, she released and directed The Veronicas' single "On Your Side".[51] She is a supporter of many charities, won a charity boxing match,[52] and has travelled to Laos and Africa to volunteer each year. </p>
+								
+								<p> Issues of concern to Rose include animal welfare, campaigns for anti-bullying and youth mental health, where she works as an ambassador for Headspace. Known for being extensively tattooed, she showed off her tattoos in a photo spread for Maxim Australia and PETA, as part of the campaign "I'd Rather Go Naked Than Wear Fur." </p>
+						
+							</div>
+							
+							<div class="col-4">
+								<img src="data/rubyRose_data/1.jpg" class="imag-fluid w-100">
+								<div class="lead py-3"> Actress </div>
+							</div>
+							
+							<div class="col-4">
+								<img src="data/rubyRose_data/9.jpg" class="imag-fluid w-100">
+								<div class="lead py-3"> Television Presenter </div>
+							</div>
+							<div class="col-4">
+								<img src="data/rubyRose_data/2.jpg" class="imag-fluid w-100">
+								<div class="lead py-3"> Model </div>
+							</div>
+							
+						</div>
+						<!--
+							-----------------------------------------------
+							[ PERSONAL section ]
+							-----------------------------------------------
+						-->
+						<div class="row" id="personal">
+						
+							<div class="col-12">
+								
+								<div class="h3 py-3  border-bottom"> Personal </div>
+						
+								<p> Rose came out as a lesbian at age 12.[55][56] She said that she was bullied, and that it included both verbal and physical abuse by her male peers, because of her sexuality and gender variance.[57][58] She was also sexually abused as a child by a relative. </p>
+								
+								<p> Rose experienced suicidal thoughts, and attempted suicide at age 12.[55][57] She has struggled with mental health issues all of her life, having attempted suicide multiple times and has been diagnosed with complex post-traumatic stress disorder and clinical depression (which was initially misdiagnosed as bipolar disorder). </p>
+								
+								
+								<div class="row">
+								
+									<div class="col">
+								
+										<p> Rose said she was convinced she was a boy while growing up and that she was saving up money to physically transition from female to male.[58][61] She said, "It was in my mind as something I wanted to do and then I just... didn't. I guess I grew out of it. I even used to sleep on my front because I didn't want to get boobs ever, which I think worked actually."[61] Rose said she is glad she did not undergo gender reassignment surgery and that she desires to have children one day.[56] She stated that modelling led her to discover androgyny, and allowed her to model with different gender expressions. She recalled, "I remember being at a yum cha restaurant with my dad and the owner coming up and saying, 'Excuse me, we're trying to work out if you're a handsome boy or a beautiful girl.' It was a compliment and I was shocked, and when I thought about it I actually wanted to be a handsome boy." </p>
+										
+									</div>
+									
+									<div class="col-md-4 col-12 p-md-0 p-2">
+										<img src="data/rubyRose_data/7.jpg" class="imag-fluid w-100 rounded">
+									</div>
+								
+								</div>
+								
+								<p> Rose is genderfluid, saying, "I am very gender fluid and feel more like I wake up every day sort of gender neutral."[63][64] This announcement came approximately a week after she released Break Free, in which she visually transforms from a very feminine woman to a heavily tattooed man. Rose stated that she prefers to continue using feminine pronouns,[65] but she also uses they/them pronouns.[66] She said that if she had to choose a sex, she would choose to be male, but she does not feel like she should have been born with different body parts. Seeing the desire her transgender friends had for transitioning, she asked herself if her need to transition matched theirs, and concluded that she was satisfied being gender neutral. "I think at this stage I will stay a woman but ... who knows. I'm so comfortable right now I feel wonderful about it, but I also fluctuate a lot," she added. </p>
+								
+								<div class="row">
+								
+									<div class="col-md-5 col-12p-md-0 p-3">
+										<img src="data/rubyRose_data/10.jpg" class="imag-fluid w-100">
+									</div>
+									
+									<div class="col">
+									
+										<p> In 2014, Rose was engaged to fashion designer Phoebe Dahl; in December 2015, they ended their romantic relationship.[67][68] Rose was in a relationship with singer Jess Origliasso of The Veronicas from October 2016 to April 2018,[69] having previously dated in 2008. </p>
+										
+										<p> In 2019, Rose underwent emergency back surgery for a spine issue that led to two herniated discs caused by doing physical stunts on the set of Batwoman. She said if she had not had the surgery, she would have been at risk of being paralyzed. </p>
+										
+										<p> Rose is a vegan for climate change reasons. </p>
+										
+										<p> Rose is a supporter of the Australian Football League team the Geelong Cats. </p>
+
+									</div>
+								
+								</div>
+								
+							</div>
+							
+						</div>
+						<!--
+							-----------------------------------------------
+							[ INMEDIA section ]
+							-----------------------------------------------
+						-->
+						<div class="row" id="inmedia">
+						
+							<div class="col">
+								
+								<div class="h3 py-3  border-bottom"> In The Media </div>
+						
+								<div class="row">
+								
+									<div class="col">
+										
+										<p> Various media outlets have commented on public fascination with Rose's gender identity, gender expression, and physical appearance, including her tattoos and visual or behavioral similarities to Angelina Jolie, Justin Bieber, and a younger Leonardo DiCaprio.[74][75][76] In 2008 and 2009, she was chosen as one of the "25 Most Influential Gay and Lesbian Australians" by SameSame, an Australian online gay and lesbian community.[77] The public and media attention increased following Rose's debut on Orange Is the New Black, significantly with regard to heterosexual women commenting on her physical appearance.[74][78] During 2015, she was the fifth-most-searched person on Google.[79] PETA named her one of three "Sexiest Vegans" of 2017. </p>
+									
+									</div>
+									
+									<div class="col-md-3 col-12 p-md-0 p-3">
+										<img src="data/rubyRose_data/8.jpg" class="imag-fluid rounded w-100">
+									</div>
+								
+								</div>
+						
+								<p> Emma Teitel of Maclean's stated, "Rose ... resembles an androgynous Angelina Jolie; she is a rare combination of angular and soft. She is a badass with a permanently arched brow and a Justin Bieber haircut. In other words, she is the lesbian James Dean. And straight women are falling madly in love with her."[78] Alex Rees of Cosmopolitan said that everyone was enamored of Rose at the time of her season three appearance on Orange Is the New Black. </p>
+								
+								<p> Rose acknowledged the public discourse concerning her physical appearance and subsequent debate on sexual fluidity after heterosexual women said they would "go gay" for her,[78] commenting that while she thought it was brilliant and was neutral on the matter, some found the public affection toward her inappropriate because they believe it implied people can choose to be gay. Rose said she believes people are being complimentary when making such comments rather than trying to be derogatory or diminish the coming out process. She said today's society is more open about sexuality than in the past and that people should not nitpick who can or cannot identify as genderqueer, gender-neutral, bisexual or trans, or tell them how to live their lives, and that this is a message the LGBT community should be supporting. </p>
+						
+							</div>
+							
+						</div>
+						
+						
+					</div>
+				
+				</div>
+				
+			</div>
+			<!-- -->
+			<div class="container d-md-block d-none">
+				<!--
+					-----------------------------------------------
+					[ FILMOGRAPY section ]
+					-----------------------------------------------
+				-->
+				<div class="" id="filmograpy">
+					
+					<div class="h3 py-3  border-bottom"> Filmograpy </div>
+					
+					<!-- start -->
+					
+					<div class="h5 py-3"> FILM </div>
+					
+					<table class="table">
+
+						<thead>
+							<tr>
+								<th>Year</th>
+								<th>Title</th>
+								<th>Role</th>
+								<th>Notes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2013</td>
+								<td><a href="https://en.wikipedia.org/wiki/Around_the_Block_(film)" title="Around the Block (film)">Around the Block</a></td>
+								<td>Hannah</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>2014</td>
+								<td>Break Free</td>
+								<td>Herself</td>
+								<td>Short film</td>
+							</tr>
+							<tr>
+								<td rowspan="2">2016
+								</td><td><a href="https://en.wikipedia.org/wiki/Sheep_and_Wolves" title="Sheep and Wolves">Sheep and Wolves</a></td>
+								<td>Bianca (voice)</td>
+								<td>English dub</td>
+							</tr>
+							<tr>
+								<td><a href="https://en.wikipedia.org/wiki/Resident_Evil:_The_Final_Chapter" title="Resident Evil: The Final Chapter">Resident Evil: The Final Chapter</a></td>
+								<td>Abigail</td>
+								<td></td>
+							</tr>
+							<tr>
+							<td rowspan="3">2017
+							</td>
+							<td><a href="https://en.wikipedia.org/wiki/XXX:_Return_of_Xander_Cage" title="XXX: Return of Xander Cage">XXX: Return of Xander Cage</a>
+							</td>
+							<td>Adele Wolff
+							</td>
+							<td>
+							</td></tr>
+							<tr>
+							<td><a href="https://en.wikipedia.org/wiki/John_Wick:_Chapter_2" title="John Wick: Chapter 2">John Wick: Chapter 2</a>
+							</td>
+							<td>Ares
+							</td>
+							<td>
+							</td></tr>
+							<tr>
+							<td><a href="https://en.wikipedia.org/wiki/Pitch_Perfect_3" title="Pitch Perfect 3">Pitch Perfect 3</a>
+							</td>
+							<td>Calamity
+							</td>
+							<td>
+							</td></tr>
+							<tr>
+							<td>2018
+							</td>
+							<td><a href="https://en.wikipedia.org/wiki/The_Meg" title="The Meg">The Meg</a>
+							</td>
+							<td>Jaxx Herd
+							</td>
+							<td>
+							</td></tr>
+							<tr>
+							<td rowspan="2">2020
+							</td>
+							<td><a href="https://en.wikipedia.org/wiki/Cranston_Academy:_Monster_Zone" title="Cranston Academy: Monster Zone">Cranston Academy: Monster Zone</a>
+							</td>
+							<td>Liz (voice)
+							</td>
+							<td>English dub
+							</td></tr>
+							<tr>
+							<td><a href="https://en.wikipedia.org/wiki/The_Doorman_(2020_film)" title="The Doorman (2020 film)">The Doorman</a>
+							</td>
+							<td>Ali
+							</td>
+							<td>
+							</td></tr>
+							<tr>
+							<td rowspan="2">2021
+							</td>
+							<td><a href="https://en.wikipedia.org/wiki/SAS:_Red_Notice" title="SAS: Red Notice">SAS: Red Notice</a>
+							</td>
+							<td>Grace Lewis
+							</td>
+							<td>
+							</td></tr>
+							<tr>
+							<td><a href="https://en.wikipedia.org/wiki/Vanquish_(film)" title="Vanquish (film)">Vanquish</a>
+							</td>
+							<td>Victoria
+							</td>
+							<td>
+							</td></tr>
+							<tr>
+							<td rowspan="3">2022
+							</td>
+							<td><a href="https://en.wikipedia.org/wiki/1Up_(film)" title="1Up (film)">1Up</a>
+							</td>
+							<td>Parker
+							</td>
+							<td>
+							</td></tr>
+							<tr>
+							<td><i>Stowaway</i>
+							</td>
+							<td>Bella Denton
+							</td>
+							<td>
+							</td></tr>
+							<tr>
+							<td><a href="https://en.wikipedia.org/wiki/Taurus_(2022_film)" title="Taurus (2022 film)">Taurus</a>
+							</td>
+							<td>Bub
+							</td>
+							<td>
+							</td></tr>
+							<tr>
+							<td>TBA
+							</td>
+							<td><a href="https://en.wikipedia.org/wiki/Dirty_Angels" title="Dirty Angels">Dirty Angels</a>
+							</td>
+							<td>TBA
+							</td>
+							<td>
+							</td>
+							</tr>
+						</tbody>
+						
+						<tfoot></tfoot>
+
+					</table>
+					
+					<!-- end table -->
+					<div class="h5 py-3"> TELEVISION </div>
+					<!-- start -->
+					<table class="table">
+
+						<thead>
+							<tr>
+								<th>Year</th>
+								<th>Title</th>
+								<th>Role</th>
+								<th>Notes</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>2007–2011
+								</td>
+								<td><i><a href="https://en.wikipedia.org/wiki/MTV_Australia" class="mw-redirect" title="MTV Australia">MTV Australia</a></i>
+								</td>
+								<td rowspan="2">Herself
+								</td>
+								<td>MTV VJ
+								</td>
+							</tr>
+							<tr>
+								<td>2009–2010
+								</td>
+								<td><i>20 to 1</i>
+								</td>
+								<td>2 episodes
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="3">2009
+								</td>
+								<td><i><a href="https://en.wikipedia.org/wiki/Talkin%27_%27Bout_Your_Generation" title="Talkin&#39; &#39;Bout Your Generation">Talkin' 'Bout Your Generation</a></i>
+								</td>
+								<td>Herself / Guest
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td><i><a href="https://en.wikipedia.org/wiki/Australia%27s_Next_Top_Model" title="Australia&#39;s Next Top Model">Australia's Next Top Model</a></i>
+								</td>
+								<td>Herself / Guest Judge / Co-host
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td><i><a href="https://en.wikipedia.org/wiki/MTV_Australia_Awards_2009" title="MTV Australia Awards 2009">MTV Australia Awards 2009</a></i>
+								</td>
+								<td>Herself / Host
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>2009–2011
+								</td>
+								<td data-sort-value="Project, The"><i><a href="https://en.wikipedia.org/wiki/The_Project_(Australian_TV_program)" title="The Project (Australian TV program)">The Project</a></i>
+								</td>
+								<td>Herself / co-host
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="3">2010
+								</td>
+								<td><i><a href="https://en.wikipedia.org/wiki/Ultimate_School_Musical" title="Ultimate School Musical">Ultimate School Musical</a></i>
+								</td>
+								<td rowspan="3">Herself / Host
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td><i><a href="https://en.wikipedia.org/wiki/Logie_Awards_of_2010" title="Logie Awards of 2010">Logie Awards</a></i>
+								</td>
+								<td>
+								</td></tr>
+								<tr>
+								<td><i><a href="https://en.wikipedia.org/wiki/Vancouver_Winter_Olympics" class="mw-redirect" title="Vancouver Winter Olympics">Vancouver Winter Olympics</a></i>
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>2013
+								</td>
+								<td><i><a href="https://en.wikipedia.org/wiki/Mr_%26_Mrs_Murder" title="Mr &amp; Mrs Murder">Mr &amp; Mrs Murder</a></i>
+								</td>
+								<td>Herself
+								</td>
+								<td>Episode: "Early Checkout"
+								</td>
+							</tr>
+							<tr>
+								<td>2015–2016
+								</td>
+								<td><i><a href="https://en.wikipedia.org/wiki/Orange_Is_the_New_Black" title="Orange Is the New Black">Orange Is the New Black</a></i>
+								</td>
+								<td>Stella Carlin
+								</td>
+								<td><a href="https://en.wikipedia.org/wiki/Screen_Actors_Guild_Award_for_Outstanding_Performance_by_an_Ensemble_in_a_Comedy_Series" title="Screen Actors Guild Award for Outstanding Performance by an Ensemble in a Comedy Series">Screen Actors Guild Award for Best Ensemble in a Comedy Series</a><br>Nominated – <a href="https://en.wikipedia.org/wiki/Glamour_Awards" title="Glamour Awards">Glamour Award for International TV Actress</a>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2">2015
+								</td>
+								<td><i><a href="https://en.wikipedia.org/wiki/Dark_Matter_(2015_TV_series)" title="Dark Matter (2015 TV series)">Dark Matter</a></i>
+								</td>
+								<td>Wendy
+								</td>
+								<td>Episode: "Episode Seven"
+								</td>
+							</tr>
+							<tr>
+								<td><i><a href="https://en.wikipedia.org/wiki/2015_MTV_Europe_Music_Awards" title="2015 MTV Europe Music Awards">2015 MTV Europe Music Awards</a></i>
+								</td>
+								<td>Herself / co-host
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>2017
+								</td>
+								<td><i><a href="https://en.wikipedia.org/wiki/Lip_Sync_Battle" title="Lip Sync Battle">Lip Sync Battle</a></i>
+								</td>
+								<td>Herself
+								</td>
+								<td>Episode: "<a href="https://en.wikipedia.org/wiki/Milla_Jovovich" title="Milla Jovovich">Milla Jovovich</a> vs. Ruby Rose"
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="3">2018–2019
+								</td>
+								<td data-sort-value="Flash, The"><i><a href="https://en.wikipedia.org/wiki/The_Flash_(2014_TV_series)" title="The Flash (2014 TV series)">The Flash</a></i>
+								</td>
+								<td rowspan="5"><a href="https://en.wikipedia.org/wiki/Kate_Kane_(Arrowverse)" title="Kate Kane (Arrowverse)">Kate Kane / Batwoman</a>
+								</td>
+								<td>Episode: "<a href="https://en.wikipedia.org/wiki/Elseworlds_(Arrowverse)" title="Elseworlds (Arrowverse)">Elseworlds, Part 1</a>" (uncredited), "<a href="https://en.wikipedia.org/wiki/Crisis_on_Infinite_Earths_(Arrowverse)" title="Crisis on Infinite Earths (Arrowverse)">Crisis on Infinite Earths, Part 3</a>"
+								</td>
+							</tr>
+							<tr>
+								<td><i><a href="https://en.wikipedia.org/wiki/Arrow_(TV_series)" title="Arrow (TV series)">Arrow</a></i>
+								</td>
+								<td>Episodes: "<a href="https://en.wikipedia.org/wiki/Elseworlds_(Arrowverse)" title="Elseworlds (Arrowverse)">Elseworlds, Part 2</a>", "<a href="https://en.wikipedia.org/wiki/Crisis_on_Infinite_Earths_(Arrowverse)" title="Crisis on Infinite Earths (Arrowverse)">Crisis on Infinite Earths, Part 4</a>"
+								</td></tr>
+								<tr>
+								<td><i><a href="https://en.wikipedia.org/wiki/Supergirl_(TV_series)" title="Supergirl (TV series)">Supergirl</a></i>
+								</td>
+								<td>Episodes: "<a href="https://en.wikipedia.org/wiki/Elseworlds_(Arrowverse)" title="Elseworlds (Arrowverse)">Elseworlds, Part 3</a>", "<a href="https://en.wikipedia.org/wiki/Crisis_on_Infinite_Earths_(Arrowverse)" title="Crisis on Infinite Earths (Arrowverse)">Crisis on Infinite Earths, Part 1</a>"<sup id="cite_ref-SupergirlEpPics_84-0" class="reference"><a href="https://en.wikipedia.org/wiki/Ruby_Rose#cite_note-SupergirlEpPics-84">[82]</a></sup>
+								</td>
+							</tr>
+							<tr>
+								<td>2019–2020
+								</td>
+								<td><i><a href="https://en.wikipedia.org/wiki/Batwoman_(TV_series)" title="Batwoman (TV series)">Batwoman</a></i>
+								</td>
+								<td>Lead role (season 1)<br>20 episodes
+								</td></tr>
+								<tr>
+								<td>2020
+								</td>
+								<td><i><a href="https://en.wikipedia.org/wiki/Legends_of_Tomorrow" title="Legends of Tomorrow">Legends of Tomorrow</a></i>
+								</td>
+								<td>Episode: "<a href="https://en.wikipedia.org/wiki/Crisis_on_Infinite_Earths_(Arrowverse)" title="Crisis on Infinite Earths (Arrowverse)">Crisis on Infinite Earths, Part 5</a>"
+								</td>
+							</tr>
+							<tr>
+								<td>2022
+								</td>
+								<td><i><a href="https://en.wikipedia.org/wiki/Ink_Master" title="Ink Master">Ink Master</a></i>
+								</td>
+								<td>Herself
+								</td>
+								<td>Guest Judge; <a href="https://en.wikipedia.org/wiki/Ink_Master_(season_14)" title="Ink Master (season 14)">Season 14</a>
+								</td>
+							</tr>
+						</tbody>
+						
+						<tfoot></tfoot>
+					
+					</table>
+					<!-- end -->
+					<div class="h5 py-3"> MUSIC VEDIO </div>
+					<!-- start -->
+					<table class="table">
+
+						<thead>
+							<tr>
+								<th>Year</th>
+								<th>Title</th>
+								<th>Artist</th>
+								<th>Role</th>
+								<th>Notes</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td>2011
+								</td>
+								<td>"<a href="https://en.wikipedia.org/wiki/Boys_like_You_(360_song)" title="Boys like You (360 song)">Boys like You</a>"
+								</td>
+								<td><a href="https://en.wikipedia.org/wiki/360_(rapper)" title="360 (rapper)">360</a>
+								</td>
+								<td>Love interest
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>2012
+								</td>
+								<td>"Guilty Pleasure"
+								</td>
+								<td>Herself and <a href="https://en.wikipedia.org/wiki/Gary_Go" title="Gary Go">Gary Go</a>
+								</td>
+								<td>Herself
+								</td>
+								<td>
+								</td>
+							</tr>
+								<tr>
+								<td>2016
+								</td>
+								<td>"<a href="https://en.wikipedia.org/wiki/On_Your_Side_(The_Veronicas_song)" title="On Your Side (The Veronicas song)">On Your Side</a>"
+								</td>
+								<td><a href="https://en.wikipedia.org/wiki/The_Veronicas" title="The Veronicas">The Veronicas</a>
+								</td>
+								<td>Love interest
+								</td>
+								<td>Also writer and director
+								</td>
+							</tr>
+							<tr>
+								<td>2017
+								</td>
+								<td>"How A Heart Unbreaks"
+								</td>
+								<td>Evermoist
+								</td>
+								<td>Calamity
+								</td>
+								<td>(Pitch Perfect 3 Movie)
+								</td>
+							</tr>
+							<tr>
+								<td>2020
+								</td>
+								<td>"Yo Visto Así"
+								</td>
+								<td><a href="https://en.wikipedia.org/wiki/Bad_Bunny" title="Bad Bunny">Bad Bunny</a>
+								</td>
+								<td>Herself
+								</td>
+								<td>
+								</td>
+							</tr>
+						</tbody>
+
+						<tfoot></tfoot>
+
+					</table>
+
+					<!-- end -->
+					
+				</div>
+				<!--
+					-----------------------------------------------
+					[ AWARDS AND NOMINATIONS section ]
+					-----------------------------------------------
+				-->
+				<div class="" id="award">
+					
+					<div class="h3 py-3  border-bottom"> Awards AND Nominations </div>
+					
+					<table class="table my-5">
+						
+						<thead>
+							<tr>
+								<th> YEAR </th>
+								<th> ASSOCIATION </th>
+								<th> CATEGORY </th>
+								<th> NOMINATION WORK </th>
+								<th> RESULT </th>
+							</tr>
+						</thead>
+						
+						<tbody>
+						
+							<tr>
+								<td> 2009 </td>
+								<td> ASTRA </td>
+								<td> Favourite Female Personality </td>
+								<td> Hereself </td>
+								<td class="table-success"> WIN </td>
+							</tr>
+							
+							<tr>
+								<td> 2009 </td>
+								<td> British LGBT </td>
+								<td> Celebrity Rising Star </td>
+								<td> Hereself </td>
+								<td> NOMINATED </td>
+							</tr>
+							
+							<tr>
+								<td> 2015 </td>
+								<td> GQ Australia </td>
+								<td> Woman Of The Year </td>
+								<td> Hereself </td>
+								<td class="table-success"> WIN </td>
+							</tr>
+							
+							<tr>
+								<td> 2015 </td>
+								<td> British LGBT </td>
+								<td> Celebrity Of The Year </td>
+								<td> Hereself </td>
+								<td> NOMINATED </td>
+							</tr>
+							
+							<tr>
+								<td> 2016 </td>
+								<td> GLAAD Media </td>
+								<td> Stephen F.Kolzak </td>
+								<td> Hereself </td>
+								<td class="table-success"> WiN </td>
+							</tr>
+							
+							<tr>
+								<td> 2016 </td>
+								<td> Glamour </td>
+								<td> NEXT Breakthrough </td>
+								<td> Hereself </td>
+								<td> NOMINATED </td>
+							</tr>
+							
+							<tr>
+								<td> 2020 </td>
+								<td> Queerty </td>
+								<td> TV Performance </td>
+								<td> Batwoman </td>
+								<td> NOMINATED </td>
+							</tr>
+							
+							<tr>
+								<td> 2022 </td>
+								<td> Golden Raspberry </td>
+								<td> WORST Actress </td>
+								<td> Vanquish </td>
+								<td> NOMINATED </td>
+							</tr>
+						
+						</tbody>
+						
+						<tfoot class="d-none">
+						
+							<td> 5 </td>
+							<td> 7 </td>
+							<td> 8 </td>
+							<td> 3 </td>
+							<td> 3 </td>
+						
+						</tfoot>
+					
+					</table>
+						
+				</div>
+				
+			</div>
+			<!--
+				--------------------------------------------------------------------------------
+				[ FOOTER section ]
+				--------------------------------------------------------------------------------
+			-->
+			<div class="bg-light shadow p-3 mt-5" id="footer">
+				<!--
+					-------------
+					| UP BUTTON |
+					-------------
+				-->
+				<a href="#" style="position:fixed;bottom:1rem;right:1rem" class="font-weight-bold text-light bg-dark rounded p-3 text-decoration-none"> UP </a>
+				<!--
+					[ bottom section ]========================================================== 
+				-->
+				<div class="row">
+					
+					<div class="py-3 font-weight-bold"> This page was last edited on 13 April 2023, at 07:08 (UTC). </div>
+				
+					<div class="alert alert-warning mx-auto"> Text is available under the <a href="#" class="text-secondary">Creative Commons Attribution-ShareAlike License 3.0</a>; additional terms may apply. By using this site, you agree to the <a href="#" class="text-secondary">Terms of Use</a> and <a href="#" class="text-secondary">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="#" class="text-secondary">Wikimedia Foundation, Inc</a>., a non-profit organization. </div>
+					
+					<div class="d-block py-3" id="extra">
+					
+						<a href="#" class="btn btn-outline-primary">Privacy policy</a>
+						<a href="#" class="btn btn-outline-primary">About Wikipedia</a>
+						<a href="#" class="btn btn-outline-primary">Disclaimers</a>
+						<a href="#" class="btn btn-outline-primary">Contact Wikipedia</a>
+						<a href="#" class="btn btn-outline-primary">Mobile view</a>
+						<a href="https://mastermayank.w3spaces.com" class="btn btn-outline-primary">Developers</a>
+						<a href="#" class="btn btn-outline-primary">Statistics</a>
+						<a href="#" class="btn btn-outline-primary">Cookie statement</a>
+					
+					</div>
+				
+				</div>
+				
+			</div>
+			
+		</div>
+		<!--
+			================
+			| SCRIPT SHEET |
+			================
+		-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="../assets/bootstrap.bundle.min.js"></script>
+		<script src="script.js"></script>
+		
+	</body>
+
+</html>
+<!-- THE END -->
