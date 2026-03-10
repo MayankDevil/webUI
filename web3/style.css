@@ -1,0 +1,384 @@
+/*
+-	File: style.css
+*/
+
+*
+{
+	/* user-select: text; */
+	text-decoration:none;
+	margin:0;
+	padding:0;
+	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	color:var(--black);
+	border: none;
+	outline:none;
+	box-sizing: border-box;
+}
+:root
+{	
+	--white: #ffffff;
+	--dark0:#f8f9fa;
+	--dark1:#e9ecef;
+	--dark2:#dee2e6;
+	--dark3:#ced4da;
+	--dark4:#adb5bd;
+	--dark5:#6c757d;
+	--dark6:#495057;
+	--dark7:#343a40;
+	--dark8:#212529;
+	--black:#000000;
+	--theme1:oklch(58.066% 0.12654 109.783 / 0.102);
+	--theme2:#fd9843;
+	--theme3:oklch(59.949% 0.13735 126.341);
+	--theme4:oklch(49.552% 0.08957 126.209);
+}
+::-webkit-scrollbar
+{
+	width: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 1rem;
+	background: var(--t);
+}
+::selection
+{
+	background: var(--tertiary);
+}
+/*
+	comman css -----------------------
+*/
+body
+{
+	overflow: hidden;
+	overflow-Y:auto ;
+}
+main
+{
+	background: var(--white);
+	/* max-width: 1200px; */
+	/* margin: 0 auto; */
+}
+h1
+{
+	/* font-weight: normal; */
+	font-size:10vw;
+	color: var(--dark4);
+}
+h2
+{
+	font-weight: 200;
+}
+h3
+{
+	font-weight: normal;
+	font-size: 1.5rem;
+	color: var(--dark8);
+}
+h4
+{
+	line-height: 2rem;
+	font-weight: bold;
+	color:var(--theme4);
+}
+h5
+{
+	line-height: 2rem;
+	font-weight: 100;
+	font-size: 1.3rem;
+	color: var(--dark);
+}
+p
+{
+	line-height: 1.5rem;
+	color: var(--dark5);
+}
+a
+{
+	display: inline-block;
+	color: var(--theme4);
+}
+.btn
+{
+	display: inline-block;
+	margin: 1rem auto;
+	padding: 10px;
+	font-size: 1rem;
+	color: var(--theme4);
+	border: 1px solid var(--theme4);
+}
+.btn:hover
+{
+	transition: all linear 0.3s;
+	color: var(--white);
+	background: var(--theme4);
+}
+.none
+{
+	display: none;
+}
+.container
+{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/*
+	header css -----------------------
+*/
+#header
+{
+	background: var(--theme4);
+}
+#header .container
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 1rem;
+}
+#header #brandname
+{
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: var(--white);
+}
+#nav .nav-link
+{
+	display: inline-block;
+	padding: 10px;
+	font-size: 1rem;
+	color:var(--dark0);
+	opacity: 0.9;
+}
+#nav .nav-link:hover
+{
+	color: var(--theme2);
+}
+#social
+{
+	display: flex;
+	align-items: center;
+}
+#social .media
+{
+	display: inline-block;
+	margin:auto 0.5rem;
+}
+#social .media img
+{
+	width: 30px;
+	aspect-ratio: 1/1;
+	object-fit: contain;
+	background: var(--theme3);
+}
+#social .media:hover
+{
+	transition: all linear 0.2s;
+	transform: translateY(-5px);
+}
+
+/*
+	footer css ------------------------
+*/
+#footer
+{
+	background: var(--theme4);
+}
+#footer .container
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+}
+#footer .copy
+{
+	font-size: 1rem;
+	color:var(--dark2);
+}
+#footer .developer
+{
+	font-size: 1rem;
+	color: var(--dark1);
+}
+#footer a
+{
+	line-height: 2rem;
+	font-weight: bold;
+	color: var(--dark0);
+}
+#footer a:hover
+{
+	color: var(--theme2);
+}
+
+#wrapper .container
+{
+	padding: 10px;
+	display: grid;
+	grid-gap:10px;
+	grid-template-columns: 270px auto;
+}
+
+/* aside css */
+
+#aside
+{
+	display: grid;
+	background: var(--theme1);
+}
+#sidebar
+{
+	display: block;
+}
+#sidebar .link
+{
+	display: block;
+	padding: 10px 15px;
+	font-size: 1rem;
+	color: var(--theme4);
+}
+#sidebar .link:hover
+{
+	font-weight: bold;
+	color: var(--white);
+	background: var(--theme4);
+}
+#side_banner
+{
+	place-self: flex-end;
+	/* display: none; */
+	object-fit:cover;
+	/* height: 90%; */
+	width: 100%;
+	aspect-ratio: 1/1;
+	/* margin: 5%; */
+	filter: sepia(1) opacity(0.3);
+}
+
+/* about css */
+
+article
+{
+	padding: 1rem;
+	border: 1px solid var(--dark4);
+}
+.about p
+{
+	padding: 1rem 0;
+}
+.about p a
+{
+	padding: 0 5px;
+	color: var(--theme2);
+	background:var(--dark9);
+}
+
+#cardBox
+{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3,1fr);
+	margin-top: 1rem;
+}
+.card
+{
+	background: var(--dark1);
+	border-bottom: 1px dotted var(--gray);
+}
+.card .content
+{
+	padding: 1rem;
+}
+.image
+{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	background: var(--tertiary);
+	background-blend-mode:lighten;
+}
+.card .btn
+{
+	padding: 5px 10px;
+	margin: 1rem 0 0 0;
+}
+
+/*
+    1200PX SCREEN ---------------------
+*/
+@media screen and (max-width: 1200px)
+{
+
+}
+/*
+    992PX SCREEN ----------------------
+*/
+@media screen and (max-width: 992px)
+{
+	#wrapper .container
+	{
+		padding: 0;
+	}
+	#cardBox
+	{
+		padding: 1rem;
+		grid-template-columns: 1fr 1fr;
+	}
+	.card:last-child
+	{
+		grid-column: 1/-1;
+	}
+	.image
+	{
+		height: auto;
+	}
+}
+/*
+    768PX SCREEN ----------------------
+*/
+@media screen and (max-width: 768px)
+{
+	#header .container,
+	#footer .container
+	{
+		padding: 1rem 10px;
+		flex-flow: column wrap;
+	}
+	#header #nav
+	{
+		order: 1;
+		text-align: center;
+	}
+	#wrapper .container
+	{
+		grid-template-columns: 1fr 250px;
+	}
+	#aside
+	{
+		order: 1;
+	}
+	#cardBox
+	{
+		grid-template-columns: 1fr;
+	}
+}
+/*
+    576PX SCREEN ----------------------
+*/
+@media screen and (max-width: 576px)
+{
+	#wrapper .container
+	{
+		grid-template-columns: 1fr;
+	}
+}
+/*
+    375PX SCREEN ----------------------
+*/
+@media screen and (max-width: 375px)
+{
+}
+
+/* developed by mayank | ( https://github.com/MayankDevil ) */
