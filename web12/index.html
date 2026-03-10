@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<!--
+-   Digittrix " Assignment Task "
+-	Design & Developed by Mayank
+-   HTML : ./index.html
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MayankDevil</title>
+    <!--
+        ---------
+        | style |
+        ---------
+    -->    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!--
+        ----------------
+        | main wrapper |
+        ----------------
+    -->
+    <main id="main">
+		
+        <!--
+            ===============
+            [ nav section ] -----------
+            ===============
+        -->
+        <nav class="" id="nav">
+            <div class="bg-blue">
+                <div class="container-lg">
+                    <div class="d-none d-md-block">
+                        <div class="row py-2">
+                            <div class="col-6 d-flex align-items-center" class="first">
+                                <!-- (logo) -->
+                                <div class="d-flex" id="logo">
+                                    <img src="public/svg/logo.svg" alt="" class="icon"><strong class="text-light ms-2">  LOGO </strong>
+                                </div>
+                                <!-- (location) -->
+                                <div name="" class="d-flex justify-content-between" id="location">
+
+                                    <img src="./public/svg/location.svg" alt="">
+                                    <!-- <label for="#locationSelect"> Location </label> -->
+                                    
+                                    <select name="" class="w-100 text-white bg-blue" id="">
+                                        <option value=""> &nbsp; Location </option>
+                                        <option value=""> Russia </option>
+                                        <option value=""> Japan </option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-end col-6" class="last">
+
+                                <a class="text-light mx-2" id="link1"> Become a Consultant </a>
+
+                                <img src="public/svg/bell.svg" alt="" class="icon icon2">
+                                <img src="public/svg/chat.svg" alt="" class="icon icon2">
+
+                                <div class="user-icon">
+                                    <img src="public/svg/user.svg" alt="" class="user-img">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-lg d-block d-md-none" id="navBgImage">
+
+                <div class="lead text-white pt-3 pb-5"> 20% Lorem ipsum, dolor sit amet consectetur ! </div>
+                
+                <img src="./public/addsvg/head.svg" id="headerImage" />
+
+            </div>
+        </nav>
+        <!--
+            ==================
+            [ header section ] -----------
+            ==================
+        -->
+        <header class="bg-blue" id="header">
+            <div class="container-lg">
+                <div class="row pt-3">
+
+                    <!-- ( first ) -->
+                    <div class="col-7" class="first">
+
+                        <div class="w-100 py-4"></div>
+
+                        <!-- ( center speach ) -->
+                        <div class="py-5 mt-5 text-white" id="superword">
+
+                            <h2> Guiding Your <span class="CaveatFont"> Path to Success </span> </h2>
+                            <h2> Expert Consultation at Your Service </h2>
+
+                            <!-- ( search bar ) -->
+                            <div class="p-1 mt-4 mb-2 bg-white" id="bar">
+
+                                <input type="text" name="searchbar" placeholder="Search anything here" id="search">
+
+                                <button class="btn btn-primary bg-blue px-4"> <img src="public/svg/search.svg" alt="search"> </button>
+
+                            </div>
+
+                            <h6> <img src="public/svg/roundclock.svg" alt=""> <span class="text-white"> Institude in Mohali, Study Buddies, IELTS </span> </h6>
+
+                        </div>
+
+                        <div class="w-100 py-4"></div>
+
+                        <!-- ( bottom section ) -->
+                        <div class="row mt-5 mb-3 bottom">
+                            <a href="#" class="col">
+                                <img src="public/svg/bussiness.svg" alt="">
+                            </a>
+                            <a  href="#" class="col">
+                                <img src="public/svg/shop.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- ( last ) -->
+                    <div class="col-5 last">
+
+                        <img src="public/svg/person.svg" alt="" id="student-img">
+
+
+                        <a href="#" class="text-white text-decoration-none h5" id="diegoStudent"> Diego, Student </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!--
+            =========================
+            [ addvertisment section ] -----------
+            =========================
+        -->
+        <section class="d-block d-md-none"  id="addvertisment">
+            <!-- (search) -->
+            <div class="container-lg">
+                <div class="d-flex bg-white p-3 my-3 shadow rounded" id="searchBox">
+
+                    <img src="./public/addsvg/search.svg" alt="" class="icon3" />
+
+                    <input type="text" name="search" placeholder="Search consultant here ..." class="border-start border-secondary" id="searchHere" />
+
+                    <img src="./public/addsvg/mic.svg" alt="" class="icon3" />
+
+                </div>
+                    
+                <div class="p-3 text-dark w-100 d-flex justify-content-between" id="alert"> #103,Park View Street, Plot No.57, Chandigarh, 160007 <span>&nbsp;</span> <a href="#" class="t" > Change </a>  </div>
+            
+            </div>
+            <!-- (adds) -->
+            <div class="d-block d-md-none">
+                <div class="contianer-lg">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="#" class="" id="add1">
+                                <img src="./public/addsvg/1.svg" alt="" class="my-2">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="#" class="" id="add2">
+                                <img src="./public/addsvg/2.svg" alt="" class="my-2">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="#" class="" id="add3">
+                                <img src="./public/addsvg/3.svg" alt="" class="my-2">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+            =======================
+            [ consultants section ] -----------
+            =======================
+        -->
+        <section id="consultant">
+            <div class="container-lg">
+                <div class="row py-3 py-md-5 my-0 my-md-3">
+                    <!-- (two row heading) -->
+                    <div class="col-12 col-lg-4 d-flex align-items-center justify-content-between py-3 py-lg-1 sideheading">
+                        <div class="row  align-items-center text-start text-lg-center w-100">
+                            <div class="col-8 col-lg-12">
+                                <h4 class="text-blue d-inline" id="consultantHeading">  <span class="d-block d-lg-none">Live Consultant</span><span class="d-none d-lg-block">Top Rated Consultants</span> </h4>
+                                <div class="card-text"> Our trusted partner in navigation the immigration journey </div>
+                            </div>
+                            <div class="col text-end text-lg-center my-2 last">
+                                <a href="#" class="d-none d-md-inline btn btn-primary bg-blue px-5"> View all </a>
+                                <a href="#" class="d-inline d-md-none btn text-secondary"> See all </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ( consultant cards ) -->
+                    <div class="col">
+                        <div class="row responsiveRule">
+
+                            <div class="col-4">
+                                <!-- (card1) -->
+                                <div class="card consultantBox">
+                                    <img src="./public/cons/c1.jpeg" class="card-img" alt="...">
+                                    <div class="cardBody">
+                                        <h5 class="card-title">Visit Masters</h5>
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                        </div>
+                                        <div class="d-flex d-lg-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" class="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card2) -->
+                                <div class="card consultantBox">
+                                    <img src="./public/cons/c2.jpeg" class="card-img" alt="...">
+                                    <div class="cardBody">
+                                        <h5 class="card-title">Visit Masters</h5>
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                        </div>
+                                        <div class="d-flex d-lg-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
+
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card3) -->
+                                <div class="card consultantBox">
+                                    <img src="./public/cons/c3.jpeg" class="card-img" alt="...">
+                                    <div class="cardBody">
+                                        <h5 class="card-title">Visit Masters</h5>
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                        </div>
+                                        <div class="d-flex d-lg-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
+
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card4) -->
+                                <div class="card consultantBox">
+                                    <img src="./public/cons/c4.jpeg" class="card-img" alt="...">
+                                    <div class="cardBody">
+                                        <h5 class="card-title">Visit Masters</h5>
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                        </div>
+                                        <div class="d-flex d-lg-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card5) -->
+                                <div class="card consultantBox">
+                                    <img src="./public/cons/c5.jpeg" class="card-img" alt="...">
+                                    <div class="cardBody">
+                                        <h5 class="card-title">Visit Masters</h5>
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                        </div>
+                                        <div class="d-flex d-lg-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
+
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card6) -->
+                                <div class="card consultantBox">
+                                    <img src="./public/inst/i1.jpeg" class="card-img" alt="...">
+                                    <div class="cardBody">
+                                        <h5 class="card-title">Visit Masters</h5>
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                        </div>
+                                        <div class="d-flex d-lg-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
+
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--
+            ======================
+            [ institutes section ] -----------
+            ======================
+        -->
+        <section id="institute">
+            <div class="container-lg">
+                <div class="row py-3 py-md-5 my-0 my-md-3">
+                    
+                    <!-- ( institute cards ) -->
+                    <div class="col">
+                        <div class="row responsiveRule">
+
+                            <div class="col-12 col-lg-4">
+                                <!-- (card1) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card2) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i2.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Brills Institute</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card2) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i3.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Eli Institute</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card2) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i4.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Touchstone</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34,Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card2) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i5.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">British Institute</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card2) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i6.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Mantrin Institute</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- (two row heading) -->
+                    <div class="col-12 col-lg-4 order-first order-lg-last d-flex align-items-center justify-content-between py-2 py-lg-1 sideheading">
+                        <div class="row  align-items-center text-start text-lg-center w-100">
+                            <div class="col col-lg-8 col-lg-12 first">
+                                <h4 class="text-blue"> Popular Institutes </h4>
+                                <div class="card-text"> Lorem Ipsum is simply dummy text for printing and typesetting industry. </div>
+                            </div>
+                            <div class="col text-end text-lg-center my-3 last">
+                                <a href="#" class="d-none d-md-inline btn btn-primary bg-blue px-5"> View all </a>
+                                <a href="#" class="d-inline d-md-none text-end text-decoration-none text-secondary px-5"> See all </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--
+            =======================
+            [ testimonial section ] -----------
+            =======================
+        -->
+        <section class="" id="testimonial">
+            <div class="container-lg py-0 py-md-5  my-0 my-md-3">
+                <!-- ( heading ) -->
+                <div class="heading py-3">
+                    <div class="first">
+                        <h4 class="text-blue"> Testimonials </h4>
+                        <div class="h6 d-none d-md-block"> Satisfied client who achived their, immigration dreams with us </div>
+                    </div>
+                    <div class="last">
+                        <a href="#" class="d-none d-md-block btn btn-primary bg-blue px-5"> View all </a>
+                        <a href="#" class="d-block d-md-none btn text-secondary px-5"> See all </a>
+                    </div>
+                </div>
+                <!-- ( client cards ) -->
+                <div class="row responsiveRule">
+
+                    <div class="col-4">
+                        <!-- (card1) -->
+                        <div class="testimonialBox">
+                            <div class="testimonial_head">
+                                <div class="row px-3">
+                                    <div class="col-5">
+                                        <img src="./public/person/t1.jpeg" alt="" class="img-thumbnail"/>
+                                    </div>
+                                    <div class="col-7">
+
+                                        <h5 class="card-title"> Kevin M. </h5>
+
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial_body">
+                                <div class="card-title">Outstanding service! Their service helped me navigate the complex process with ease. Highly recommended!</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <!-- (card2) -->
+                        <div class="testimonialBox">
+                            <div class="testimonial_head">
+                                <div class="row px-3">
+                                    <div class="col-5">
+                                        <img src="./public/person/t2.jpeg" alt="" class="img-thumbnail"/>
+                                    </div>
+                                    <div class="col-7">
+
+                                        <h5 class="card-title"> Olivia Spark </h5>
+
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial_body">
+                                <div class="card-title">They made my dream of relocating a reality. Thank you for the excellent support. 5 stars! <div class="p-2"></div></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <!-- (card3) -->
+                        <div class="testimonialBox">
+                            <div class="testimonial_head">
+                                <div class="row px-3">
+                                    <div class="col-5">
+                                        <img src="./public/person/t3.jpeg" alt="" class="img-thumbnail"/>
+                                    </div>
+                                    <div class="col-7">
+
+                                        <h5 class="card-title"> Lucciiaa Greem </h5>
+
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                            <img src="./public/svg/star.svg" alt=""/>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial_body">
+                                <div class="card-title">Exceptional guidance! Their expertise was instrumental in securing my immigration status. Delighted with their service!</div>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+        <!--
+            ================
+            [ blog section ] -----------
+            ================
+        -->
+        <section class="" id="blog">
+            <div class="container-lg py-0 py-md-5 my-0 my-md-3">
+                <!-- ( heading ) -->
+                <div class="heading py-3">
+                    <div class="first">
+                        <h4 class="text-blue overwrite"> Recent Blogs </h4>
+                        <div class="h6 d-none d-md-block"> Stay Updated with Our Latest Immigration Insights! </div>
+                    </div>
+                    <div class="last">
+                        <a href="#" class="d-none d-md-block btn btn-primary bg-blue px-5"> View all </a>
+                        <a href="#" class="d-block d-md-none btn text-secondary px-5"> See all </a>
+                    </div>
+                </div>
+                <!-- ( ... ) -->
+                <div class="row  responsiveRule">
+
+                    <div class="col-3">
+                        <!-- (card1) -->
+                        <div class="card blogBox">                            
+
+                            <img src="./public/blog/b1.jpeg" class="card-img" alt="..."/>
+                            
+                            <div class="card-body">
+                                <h5 class="card-title"> Immigration Challenges and Solutions: Overview </h5>
+                                <p class="card-text">Immigration challenges and solutions vary greatly depending on the country, region, and context.</p>
+                                <a href="#" class="text-decoration-none text-success">Read More &RightArrow;</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <!-- (card2) -->
+                        <div class="card blogBox">
+                            <img src="./public/blog/b2.jpeg" class="card-img" alt="..."/>
+                            <div class="card-body">
+                                <h5 class="card-title"> How to Choose the Right Immigration Firm </h5>
+                                <p class="card-text">Choosing the right immigration firm is a crucial step in your journey to immigrate to a new country.</p>
+                                <a href="#" class="text-decoration-none text-success">Read More &RightArrow;</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <!-- (card3) -->
+                        <div class="card blogBox">
+                            <img src="./public/blog/b3.jpeg" class="card-img" alt="..."/>
+                            <div class="card-body">
+                                <h5 class="card-title"> Immigration Process Myths vs. Facts </h5>
+                                <p class="card-text">To foster a better understanding of this issue, it's essential to distinguish between myths and facts.</p>
+                                <a href="#" class="text-decoration-none text-success">Read More &RightArrow;</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <!-- (card4) -->
+                        <div class="card blogBox">
+                            <img src="./public/blog/b4.jpeg" class="card-img" alt="..."/>
+                            <div class="card-body">
+                                <h5 class="card-title"> Navigating the Immigration Process </h5>
+                                <p class="card-text">Immigrating to a new country is a life-changing decision that comes with its fair share of challenges.</p>
+                                <a href="#" class="text-decoration-none text-success">Read More &RightArrow;</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--
+            ==================
+            [ footer section ] -----------
+            ==================
+        -->
+        <footer class="bg-blue" id="footer">
+            <div class="container-lg">
+                <div class=" text-white">
+
+                    <!-- ( linkset 1) -->
+                    <div class="w-100" id="linklist1">
+                        <div class="row">
+                            
+                            <div class="col-12 col-md-6">
+                                <img src="public/logo.png" alt="" id="bottomLogo">
+
+                                <p class=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ducimus assumenda, doloribus animi aliquam atque ea maxime laborum cumque sint rerum, incidunt harum, quis expedita. Laboriosam eius dicta perspiciatis totam voluptatem enim. Autem qui consequuntur alias? </p>
+
+                            </div>
+                            <div class="col-12 col-md-3">
+
+                                <h5 class="h5"> Quick Links </h5>
+
+                                <div class="linkbox">
+                                    <a href="#" class=""> Consultant </a>
+                                    <a href="#" class=""> Institude </a>
+                                    <a href="#" class=""> Testimonials </a>
+                                    <a href="#" class=""> Blogs </a>
+                                    <a href="#" class=""> Become a Consultant </a>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-3 py-4 py-md-2">
+                                
+                                <h5 class="h5"> Contact Us </h5>
+
+                                <div class="linkbox">
+                                    <a href="tel:+1234567897" class="">+123&nbsp;4567&nbsp;897</a>
+                                    <a href="mailto:support@gmail.com" class="">support@gmail.com</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+    
+                    <!-- ( linkset 2) -->
+                    <div class="w-100" id="linklist2">
+                        <div class="row">
+                            <!-- (first) -->
+                            <div class="col-12 col-md-6  py-3 py-md-1">
+
+                                <h6 class="h6"> Immigration Consultants </h6>
+
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 linkbox">
+                                        <a href="#" class=""> Immigration Consultants near me </a>
+                                        <a href="#" class=""> Immigration Consultants in Mohali </a>
+                                        <a href="#" class=""> Immigration Consultants in Chandigarh </a>
+                                        <a href="#" class=""> Immigration Consultants in Bathinda </a>
+                                        <a href="#" class=""> Immigration Consultants in Amritsar </a>
+                                        <a href="#" class=""> Immigration Consultants in Barnala </a>
+                                        <a href="#" class=""> Immigration Consultants in Faridkot </a>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 linkbox">
+                                        <a href="#" class=""> Immigration Consultants near me </a>
+                                        <a href="#" class=""> Immigration Consultants in Mohali </a>
+                                        <a href="#" class=""> Immigration Consultants in Chandigarh </a>
+                                        <a href="#" class=""> Immigration Consultants in Bathinda </a>
+                                        <a href="#" class=""> Immigration Consultants in Amritsar </a>
+                                        <a href="#" class=""> Immigration Consultants in Barnala </a>
+                                        <a href="#" class=""> Immigration Consultants in Faridkot </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- (last) -->
+                            <div class="col-12 col-md-6  py-3 py-md-1">
+
+                                <h6 class="h6"> Immigration Consultants </h6>
+
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 linkbox">
+                                        <a href="#" class=""> Immigration Consultants near me </a>
+                                        <a href="#" class=""> Immigration Consultants in Mohali </a>
+                                        <a href="#" class=""> Immigration Consultants in Chandigarh </a>
+                                        <a href="#" class=""> Immigration Consultants in Bathinda </a>
+                                        <a href="#" class=""> Immigration Consultants in Amritsar </a>
+                                        <a href="#" class=""> Immigration Consultants in Barnala </a>
+                                        <a href="#" class=""> Immigration Consultants in Faridkot </a>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 linkbox">
+                                        <a href="#" class=""> Immigration Consultants near me </a>
+                                        <a href="#" class=""> Immigration Consultants in Mohali </a>
+                                        <a href="#" class=""> Immigration Consultants in Chandigarh </a>
+                                        <a href="#" class=""> Immigration Consultants in Bathinda </a>
+                                        <a href="#" class=""> Immigration Consultants in Amritsar </a>
+                                        <a href="#" class=""> Immigration Consultants in Barnala </a>
+                                        <a href="#" class=""> Immigration Consultants in Faridkot </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- ( social media link ) -->
+                    <div class="w-100" id="social">
+
+                        <div class="row">
+                            <a href="#" class="col-2 col-md-1">
+                                <img src="public/social/facebook.svg" alt="facebook" class="media">
+                            </a>
+                            <a href="#" class="col-2 col-md-1">
+                                <img src="public/social/instragram.svg" alt="facebook" class="media">
+                            </a>
+                            <a href="#" class="col-2 col-md-1">
+                                <img src="public/social/twitter.svg" alt="facebook" class="media">
+                            </a>
+                            <a href="#" class="col-2 col-md-1">
+                                <img src="public/social/music.svg" alt="facebook" class="media">
+                            </a>
+                            <a href="#" class="col-2 col-md-1">
+                                <img src="public/social/youtube.svg" alt="facebook" class="media">
+                            </a>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- (copyright) -->
+            <div class="" id="copyright">
+                <div class="container-lg p-3 text-center">
+
+                    <b class="text-white">All Rights Reserved by <a href="https://mayankdevil.github.io/MayankDevil" class="text-white text-decoration-none"> Mayank </a></b>
+                    
+                </div>
+            </div>
+        </footer>
+        
+        <!--
+            ================
+            [ menu section ] -----------
+            ================
+        -->
+        <section class="d-block d-sm-none bg-white shadow-lg" id="menu">
+            <div class="contianer-lg">
+                <div class="row mx-3 py-3">
+
+                    <div class="col-4">
+                        <a href="#" class="" id="home">
+                            <img src="./public/menu/home.svg" alt="" class="mx-3">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="" id="application">
+                            <img src="./public/menu/application.svg" alt="" class="mx-3">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="" id="profile">
+                            <img src="./public/menu/profile.svg" alt="" class="mx-3">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--
+        ----------
+        | script |
+        ----------
+    -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <script src="../assets/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<!-- the end -->
